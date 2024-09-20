@@ -39,7 +39,7 @@ class MAscotas(QWidget):
         #se crea un recuadreo paramostrar los datos iingresados anteriormente
         mosDT = QMessageBox(self)
         mosDT.setWindowTitle("Datos ingresadsos")
-        for i, mascota in self.mascotas:
+        for i, mascota in enumerate(self.mascotas):
             nombre = mascota[0].text()
             edad = mascota[1].text()
             tipo = mascota[2].text()
